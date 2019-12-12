@@ -1,41 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     @@include("partials/head.html", {
-      "title": "Dashkit"
+      "title": "Tristan Chiva - Macif Redesign"
     })
   </head>
   <body>
 
-    <!-- MODALS
-    ================================================== -->
-    @@include("partials/modals.html")
-
-    <!-- NAVIGATION
-    ================================================== -->
-    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-      @@if (sidebarSize == 'base' || demoMode) {
-        @@include("partials/sidebar.html", {
-          "category": "pages",
-          "subcategory": "team",
-          "page": "team-projects.html"
-        })
-      }
-      @@if (sidebarSize == 'small' || demoMode) {
-        @@include("partials/sidebar-sm.html", {
-          "category": "pages",
-          "subcategory": "team",
-          "page": "team-projects.html"
-        })
-      }
-    }
-    @@if (navPosition == 'topnav' || demoMode) {
-      @@include("partials/topnav.html", {
-        "category": "pages",
-        "subcategory": "team",
-        "page": "team-projects.html"
-      })
-    }
 
     <!-- MAIN CONTENT
     ================================================== -->
@@ -43,7 +14,7 @@
       <!-- HEADER -->
       <div class="header">
         <!-- Image -->
-        <img src="assets/img/shiseido/shiseido-banner.jpg" class="header-img-top" alt="...">
+        <img src="assets/img/macif/macif-siege.jpg" class="header-img-top" alt="macif-siege">
       </div> <!-- / .header -->
 
       <!-- CONTENT -->
@@ -51,7 +22,7 @@
         <div class="row">
           <div class="col text-center">
             <div class="avatar avatar-xxl mt-n5">
-              <img src="assets/img/shiseido/shiseido-logo-fleur.png" alt="..." class="avatar-img rounded-circle">
+              <img src="assets/img/macif/macif-logo.gif" alt="macif-logo" class="avatar-img rounded-circle">
             </div>
           </div>
         </div>
@@ -76,11 +47,9 @@ singing voice. This energetic and melodic track will be premiered at the blue st
         <div class="row justify-content-center">
 
             <!-- Card -->
-            <div class="col-4">
+            <div class="col-12 col-lg-6">
             <div class="card">
-              <a href="shiseido.html">
-                <img src="assets/img/shiseido/shiseido-logo.png" alt="..." class="card-img-top">
-              </a>
+              <img src="assets/img/shiseido/shiseido-logo.png" alt="..." class="card-img-top">
               <div class="card-body">
                 <div class="row align-items-center">
                   <div class="col">
@@ -124,62 +93,60 @@ singing voice. This energetic and melodic track will be premiered at the blue st
             </div>
           </div>
 
-          <div class="col-4">
+
+
 
             <!-- Card -->
-            <div class="card">
-              <a href="shiseido.html">
-                <img src="assets/img/macif/macif-logo.jpg" alt="..." class="card-img-top">
-              </a>
-              <div class="card-body">
-                <div class="row align-items-center">
-                  <div class="col">
+            <div class="col-12 col-lg-6">
 
-                    <!-- Title -->
-                    <h4 class="card-title mb-2 name">
-                      <a href="project-overview.html">La Macif</a>
-                    </h4>
+              <!-- Card -->
+              <div class="card">
+                  <img src="assets/img/macif/macif-logo.jpg" alt="..." class="card-img-top">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col">
 
-                    <!-- Subtitle -->
-                    <p class="card-text small text-muted">
-                      De l'application mobile à sa responsive sur desktop
-                    </p>
+                      <!-- Title -->
+                      <h4 class="card-title mb-2 name">
+                        <a href="macif.html">La Macif</a>
+                      </h4>
 
-                  </div>
-                  <div class="col-auto">
+                      <!-- Subtitle -->
+                      <p class="card-text small text-muted">
+                        De l'application mobile à sa responsive sur desktop
+                      </p>
 
-                    <!-- Dropdown -->
-                    <div class="dropdown">
-                      <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#!" class="dropdown-item">
-                          Action
-                        </a>
-                        <a href="#!" class="dropdown-item">
-                          Another action
-                        </a>
-                        <a href="#!" class="dropdown-item">
-                          Something else here
-                        </a>
-                      </div>
                     </div>
+                    <div class="col-auto">
 
-                  </div>
-                </div> <!-- / .row -->
+                      <!-- Dropdown -->
+                      <div class="dropdown">
+                        <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                <!-- Divider -->
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div> <!-- / .row -->
+
+                  <!-- Divider -->
 
 
-              </div> <!-- / .card-body -->
+                </div> <!-- / .card-body -->
+              </div>
+
             </div>
-
-          </div>
-
-
-            <!-- Card -->
-
 
 
            </div>
@@ -212,14 +179,12 @@ singing voice. This energetic and melodic track will be premiered at the blue st
          <div class="row justify-content-center">
 
              <!-- Card -->
-             <div class="col-4">
+             <div class="col-12 col-lg-6">
              <div class="card">
-               <a href="shiseido.html">
                  <img src="assets/img/shiseido/shiseido-logo.png" alt="..." class="card-img-top">
-               </a>
                <div class="card-body">
                  <div class="row align-items-center">
-                   <div class="col">
+                   <div class="col-12 col-lg-6">
 
                      <!-- Title -->
                      <h4 class="card-title mb-2 name">
@@ -260,13 +225,11 @@ singing voice. This energetic and melodic track will be premiered at the blue st
              </div>
            </div>
 
-           <div class="col-4">
+           <div class="col-12 col-lg-6">
 
              <!-- Card -->
              <div class="card">
-               <a href="shiseido.html">
                  <img src="assets/img/macif/macif-logo.jpg" alt="..." class="card-img-top">
-               </a>
                <div class="card-body">
                  <div class="row align-items-center">
                    <div class="col">
@@ -348,7 +311,7 @@ singing voice. This energetic and melodic track will be premiered at the blue st
           <div class="row justify-content-center">
 
               <!-- Card -->
-              <div class="col-4">
+              <div class="col-12 col-lg-6">
               <div class="card">
                 <a href="shiseido.html">
                   <img src="assets/img/shiseido/shiseido-logo.png" alt="..." class="card-img-top">
@@ -396,13 +359,11 @@ singing voice. This energetic and melodic track will be premiered at the blue st
               </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-12 col-lg-6">
 
               <!-- Card -->
               <div class="card">
-                <a href="shiseido.html">
                   <img src="assets/img/macif/macif-logo.jpg" alt="..." class="card-img-top">
-                </a>
                 <div class="card-body">
                   <div class="row align-items-center">
                     <div class="col">
